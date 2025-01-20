@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Shared styles */
+header {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.displayFlex {
+    display: flex;
+    gap: 50px;
+}
+
+.btnPrimary {
+    padding: 15px 60px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    background-color: #FEA301;
+    color: #FFFFFF;
+}
+
+.btnSecondary {
+    padding: 17px 47px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    background-color: #111111;
+    color: #FFFFFF;
+}
+
+
+
+.colorOrange {
+    color: #FEA301;
+}
+
+.colorSkyBlue {
+    color: #01ACFD;
+}
+
+.colorVividSkyBlue {
+    color: #05D4DF;
+}
+
+.colorBlueViolet {
+    color: #5D58EF;
+}
+
+.nav,
+.navTitle,
+.studentEmpower {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation related styles */
+
+
+.nav .navItems {
+    gap: 32px;
+
+}
+
+.navTitle .title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navTitle img {
+    width: 62px;
+    height: 62px;
+}
+
+.navItems p {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Nav style ended */
+
+/* Student empowerment related styles started */
+.empowerContent .empowerTitle {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.empowerContent .empowerDescription {
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+/* Student empowerment related styles ended */
