@@ -23,6 +23,7 @@ main {
 .backgroundImg {
     background-image: url('/assets/bg.png');
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .btnPrimary {
@@ -71,6 +72,10 @@ main {
 
 .colorBlueViolet {
     color: #5D58EF;
+}
+
+#backgroundBlue {
+    background-color: #5D58F0;
 }
 
 .nav,
@@ -144,13 +149,16 @@ main {
     font-weight: bold;
 }
 
-.curriculumCart h3 {
+
+.curriculumCart h3,
+.storiesMainImg h3 {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 32px;
 }
 
-.curriculumCart .cartDescription {
+.curriculumCart .cartDescription,
+.storiesMainImg .imgDescription {
     font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 32px;
@@ -190,3 +198,87 @@ main {
 
 
 /* Our stories part started */
+.ourStories {
+    text-align: center;
+    background-color: #f7dba9;
+}
+
+.ourStoriesTitle {
+    margin-top: 120px;
+}
+
+.storiesMainImg {
+    max-width: 540px;
+    max-height: 660px;
+    text-align: left;
+}
+
+.storiesSideImages {
+    max-height: 670px;
+}
+
+.storiesSideImg {
+    max-width: 290px;
+}
+
+.viewAllbtn {
+    margin: 80px 0px 60px 0px;
+}
+
+.ourStoriesImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+
+}
+
+.storiesMainImg,
+.storiesSideImg {
+    background-color: #FFFFFF;
+    border-radius: 18px;
+}
+
+.storiesSideImages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+}
+
+.storiesMainImg img,
+.storiesSideImg img {
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.storiesMainImg h3 {
+    padding: 0px 38px;
+}
+
+.storiesMainImg .imgDescription {
+    padding: 5px 68px 35px 45px;
+}
+
+.firstBtn {
+    background-color: #3CD8E8;
+    padding: 14px 18px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 48px;
+    transform: translate(25px, -26px);
+}
+
+.sideImgBtn {
+    background-color: #95B226;
+    padding: 9px 18px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 48px;
+    transform: translate(-15px, -25px);
+}
+
+/* Our stories part ended */
