@@ -7,9 +7,19 @@
     font-style: normal;
 }
 
+.displayHide {
+    visibility: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* Shared styles */
 header,
-main {
+main,
+.footer {
     max-width: 1440px;
     margin: 0 auto;
     margin-bottom: 60px;
@@ -281,4 +291,75 @@ main {
     transform: translate(-15px, -25px);
 }
 
-/* Our stories part ended */
+/* Our stories style part ended */
+
+/* Footer part style started */
+footer {
+    background-color: #01ACFD;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 250px;
+    padding-top: 123px;
+    padding-bottom: 174px;
+}
+
+.logoTitle {
+    align-items: center;
+    gap: 0px;
+    margin-bottom: 20px;
+}
+
+.kidsEducationTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    line-height: 0.9;
+
+}
+
+/* .logoPart img {
+    color: #FFFFFF;
+} */
+
+.logoDescription {
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: #FFFFFF;
+    line-height: 1.6;
+}
+
+.aboutTitle a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.aboutPart p a {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.aboutPart a {
+    text-decoration: none;
+    line-height: 2.6;
+}
+
+.keepInTouchPart p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+/* Mobile device style */
+.mobileDevice {
+    display: flex;
+    justify-content: space-between;
+}
