@@ -8,7 +8,7 @@
 }
 
 .displayHide {
-    visibility: hidden;
+    display: none;
 }
 
 * {
@@ -18,7 +18,7 @@
 
 /* Shared styles */
 header,
-main,
+.standardCurriculum,
 .footer {
     max-width: 1440px;
     margin: 0 auto;
@@ -101,6 +101,10 @@ main,
     font-weight: bold;
 }
 
+.navTitle {
+    gap: 17px;
+}
+
 .navTitle img {
     width: 62px;
     height: 62px;
@@ -117,35 +121,32 @@ main,
 .empowerContent .empowerTitle {
     font-size: 3.5rem;
     font-weight: bold;
+    margin-bottom: 24px;
 }
 
 .empowerContent .empowerDescription {
     font-size: 1.25rem;
     font-weight: normal;
+    margin-bottom: 24px;
 }
 
 /* Student empowerment related styles ended */
 
 
 /* Standard curriculum style started */
-#standardCurriculum {
+.standardCurriculum {
     text-align: center;
 
 }
 
-.curriculumCart {
-    position: relative;
-    z-index: 1;
-}
 
 .curriculumCarts {
     display: flex;
     justify-content: center;
     align-items: stretch;
     gap: 28px;
+    margin-top: 80px;
     margin-bottom: 80px;
-    position: relative;
-    z-index: 1;
 }
 
 .curriculumCart {
@@ -180,6 +181,10 @@ main,
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
+}
+
+.curriculumCart {
+    background-color: #FFFFFF;
 }
 
 .cartShadow1 {
@@ -362,4 +367,77 @@ footer {
 .mobileDevice {
     display: flex;
     justify-content: space-between;
+}
+
+
+
+/* Responsive style */
+/* for mobile device */
+@media screen and (max-width: 576px) {
+    header {
+        margin: 0 auto;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .mobileDevice {
+        padding: 0 10px;
+    }
+
+    .studentEmpower {
+        padding: 0 20px;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+
+    /* Header section ended- */
+    /* Standard curriculum section started- */
+    .standardCurriculum {
+        margin: 0 20px;
+    }
+
+    .standardCurriculumTitle {
+        margin-top: 100px;
+        margin-bottom: -40px;
+    }
+
+    .curriculumCarts {
+        display: block;
+    }
+
+    .curriculumCart {
+        margin-bottom: 30px;
+    }
+
+    .rotateNextPageIcon,
+    .nextPageIcon {
+        display: none;
+    }
+
+    /* standard curriculum responsive done */
+
+
+
+    /* Footer section responsive started */
+    .footer {
+        display: block;
+        margin: 0 20px;
+    }
+
+    .logoPart,
+    .aboutPart {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+/* for tablet device */
+@media screen and (min-width:576px) and (max-width:1600px) {
+    .mobileDevice {
+        display: none;
+    }
 }
