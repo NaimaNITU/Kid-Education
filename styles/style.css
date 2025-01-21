@@ -118,6 +118,10 @@ header,
 /* Nav style ended */
 
 /* Student empowerment related styles started */
+.kidLogo img {
+    width: 100%;
+}
+
 .empowerContent .empowerTitle {
     font-size: 3.5rem;
     font-weight: bold;
