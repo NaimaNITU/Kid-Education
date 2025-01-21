@@ -211,12 +211,8 @@ header,
 
 /* Standard curriculum style ended */
 .ourStories {
-    background:
-        linear-gradient(180deg, rgb(255, 255, 255), rgba(255, 182, 193, 1)),
-        url('../assets/bg.png');
-    background-attachment: fixed;
+    background: linear-gradient(180deg, rgb(255, 255, 255), rgba(255, 182, 193, 1));
     background-size: cover;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
@@ -224,7 +220,7 @@ header,
 }
 
 .ourStoriesTitle {
-    margin-top: 120px;
+    margin-top: 80px;
     margin-bottom: 80px;
 }
 
