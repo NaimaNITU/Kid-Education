@@ -473,4 +473,8 @@ footer {
     .mobileDevice {
         display: none;
     }
+
+    .nav {
+        margin-top: 20px;
+    }
 }
