@@ -215,7 +215,7 @@ header,
 
 /* Standard curriculum style ended */
 .ourStories {
-    background: linear-gradient(180deg, rgb(255, 255, 255), rgba(255, 182, 193, 1));
+    background: linear-gradient(180deg, rgb(255, 255, 255), rgba(237, 211, 135, 0.907));
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -373,12 +373,28 @@ footer {
     margin-bottom: 32px;
 }
 
-/* Mobile device style */
+/* For mobile device style started*/
 .mobileDevice {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #FEA301;
+    border-bottom: 1px solid #FEA301;
+
 }
 
+.mobileDevice .imgLogo {
+    max-height: 46px;
+    max-width: 46px;
+    padding: 15px 0px;
+}
+
+.mobileDevice .imgHamburgur {
+    max-height: 30px;
+    max-width: 30px;
+}
+
+/* For mobile device style ended */
 
 
 /* Responsive style */
@@ -402,6 +418,14 @@ footer {
         flex-direction: column-reverse;
     }
 
+    .empowerContent .empowerTitle {
+        font-size: 2.5rem;
+    }
+
+    .empowerContent .empowerDescription {
+        font-size: 1rem;
+    }
+
     /* Header section ended- */
     /* Standard curriculum section started- */
     .standardCurriculum {
@@ -410,7 +434,8 @@ footer {
 
     .standardCurriculumTitle {
         margin-top: 100px;
-        margin-bottom: -40px;
+        margin-bottom: -30px;
+        font-size: 2rem;
     }
 
     .curriculumCarts {
@@ -436,13 +461,15 @@ footer {
 
     .storiesSideImg h4 {
         padding: 0px 15px 5px 15px;
+        font-size: 0.75rem;
+        text-align: left;
     }
 
     .storiesMainImg {
         display: none;
     }
 
-    .sideImgBtn {
+    .storiesSideImg .sideImgBtn {
         padding: 4px 9px;
         font-size: 0.5rem;
         transform: translate(-16px, -17px);
@@ -461,6 +488,7 @@ footer {
         padding-top: 50px;
         display: block;
         margin: 0 20px;
+        padding-bottom: 100px;
     }
 
     .logoPart,
@@ -469,10 +497,12 @@ footer {
     }
 }
 
+/* Mobile device responsive done */
 
 
 
-/* for tablet device */
+
+/* for tablet and laptop device */
 @media screen and (min-width:576px) {
     .mobileDevice {
         display: none;
